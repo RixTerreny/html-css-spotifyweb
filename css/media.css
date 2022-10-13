@@ -1,0 +1,67 @@
+/* media query */
+@media screen and (min-width:568px) {
+    hr{
+        display: block;
+    }
+
+    .media-flex{
+        display: flex;
+    }
+
+/* aside nav bar */
+    aside{
+        text-align: left;
+        width: 40vw;
+        max-width: 230px;
+    }
+
+    aside svg{
+        margin: 0.5rem 0.5rem 0.5rem 0;
+    }
+
+
+    .spotify-logo{
+        display: none;
+    }
+
+    .spotify-logo--text{
+        display: block;
+        width: 7.5rem;
+    }
+
+    .aside-container{
+        width: 85%;
+    }
+
+    .playlist{
+        display: initial;
+    }
+
+    .playlist h2{
+        margin-top: 1rem;
+    }
+
+    .profile{
+        margin: 0.6rem 0.6rem 0.6rem 0  ;
+    }
+
+    .download{
+        margin: 0;
+
+    }
+
+    .name{
+        display: initial;
+    }
+
+    /* footer */
+    .media-margin{
+        margin: 0 0.2rem;
+    }
+}
+
+@media screen and (min-width:768px){
+    .media-flex-2{
+        display: flex;
+    }
+}

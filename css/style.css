@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+:root{
+    --shadow:#5a5a5a;
+}
+
 body{
     height: 100vh;
 }
@@ -13,16 +17,53 @@ body{
     display: flex;
 }
 
-.right{
-    justify-content: flex-end;
+.align{
+    align-items: center;
+}
+
+.just{
+    justify-content: space-between;
+}
+
+.grow{
+    flex-grow: 1;
+}
+
+.grow2{
+    flex-grow: 1;
 }
 
 .wrap{
     flex-wrap: wrap;
 }
 
+.right{
+    justify-content: flex-end;
+}
 
+.white{
+    color: white;
+}
 
+.shadow{
+    color: var(--shadow);
+}
+
+h1{
+    color: white;
+    margin-bottom: -2px;
+}
+
+h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.1rem;
+}
+
+hr{
+    margin: 0.3rem 0;
+    display: none;
+}
 
 
 /* main start */
@@ -39,6 +80,62 @@ aside{
     width: 10vw;
     height: 100vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #d2d2d2;
+    font-size: 0.8rem;
+    padding-bottom: 5rem;
+}
+
+aside svg{
+    margin: 0.5rem;
+    color: #d2d2d2;
+    width: 1.5rem;
+}
+
+.spotify-logo--text{
+    display: none;
+}
+
+.icon-holder{
+    flex-shrink: 0;
+}
+
+.name{
+    display: none;
+}
+
+.playlist{
+    margin-top: 0.8rem;
+    display: none;
+}
+
+.playlist>div{
+    margin: 0.6rem 0;
+}
+
+.playlist img{
+    width: 3rem;
+    padding-right: 0.5rem;
+    
+}
+
+.download{
+    margin: 0 0 2rem 0.45rem;
+}
+
+.profile{
+    background-color: #808080;
+    border-radius: 50%;
+    height: 2.5rem;
+    margin: 0.6rem;
+}
+
+.profile svg{
+    margin-left: 0.5rem;
 }
 
 /* header */
@@ -53,7 +150,6 @@ button{
     font-size: 0.75rem;
     margin: 1rem 0.5rem;
     padding: 0.4rem 1.5rem;
-    justify-self: right;
     border-radius: 25px;
     background-color:#080b12;
     color: white;
@@ -71,21 +167,91 @@ button{
     flex-grow: 1;
 }
 
-
-
 /* nav */
 nav{
-
 }
-
 
 
 /* Footer, PLay button */
 footer{
     background-color: #282828;
-    height: 4rem;
+    padding: 0.6rem;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    display: flex;
+    font-size: 0.7rem;
+}
+
+footer>div{
+    width: 100%;
+}
+
+footer img{
+    width: 100%;
+}
+
+.song-footer{
+    width: 2.7rem;
+    padding-right: 0.4rem;
+}
+
+footer .icon{
+    padding-left: 0.4rem;
+    width: 1.4rem;
+}
+
+footer .icon2{
+    width: 1.6rem;
+    margin: 0.1rem;
+}
+
+footer .flex .flex:first-child{
+    margin-right: 0.3rem;
+}
+
+.just-right{
+    justify-content: right;
+}
+
+.just-around{
+    justify-content: space-around;
+    max-width: 15rem;
+    margin: 0 auto;
+    transform: translate(-50%);
+    margin-left: 50%;
+    min-width: 10rem;
+}
+
+.grey-bar{
+    background-color:#5a5a5a;
+    min-width: 6.5rem;
+    margin: 0 0.3rem;
+    height: 4px;
+    border-radius: 2px;
+    flex-basis: 100%;
+    margin-top: 0.1rem;
+}
+
+.bar{
+    border-radius: 2px;
+    background-color: white;
+    height: 4px;
+    width: 35%;
+}
+
+.smaller{
+    min-width: 2rem;
+    flex-basis: 100%;
+    max-width: 4.5rem;
+}
+
+.icon3{
+    width: 1rem;
+    margin-left: 0.4rem;
+}
+
+.icon3:first-child{
+    margin-left: 0.6rem;
 }
