@@ -58,8 +58,8 @@ h1{
 
 h2{
     text-transform: uppercase;
-    color: white;
-    font-size: 1.1rem;
+    color: var(--shadow);
+    font-size: 0.85rem;
 }
 
 hr{
@@ -106,6 +106,13 @@ aside svg{
 
 .icon-holder{
     flex-shrink: 0;
+}
+
+.bord-l{
+    border-left: 2px solid #adff2f;
+    height: 1.4rem;
+    margin-left: -rem;
+    padding-right: 0.rem;
 }
 
 .name{
@@ -173,6 +180,20 @@ button{
 
 /* nav */
 nav{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 720px;
+    margin: auto;
+}
+
+nav h2{
+    padding: 1rem 0.5rem 0.3rem 0.5rem;
+}
+
+.bord-b{
+    border-bottom: 2px solid #adff2f;
+    width: 45%;
+    margin: auto;
 }
 
 
