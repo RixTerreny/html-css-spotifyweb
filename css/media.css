@@ -1,8 +1,9 @@
 /* media query */
 @media screen and (min-width:568px) {
     html{
-        font-size: 19px;
+        font-size: 16px;
     }
+    
     hr{
         display: block;
     }
@@ -14,8 +15,7 @@
 /* aside nav bar */
     aside{
         text-align: left;
-        width: 40vw;
-        max-width: 230px;
+        width: 220px;
     }
 
     aside svg{
@@ -65,8 +65,9 @@
 
 @media screen and (min-width:768px){
     html{
-        font-size: 21px;
+        font-size: 18.5px;
     }
+
     .media-flex-2{
         display: flex;
     }
